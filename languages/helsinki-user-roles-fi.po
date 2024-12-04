@@ -1,0 +1,46 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Helsinki User Roles\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-04 14:11+0000\n"
+"PO-Revision-Date: 2024-12-04 14:43+0000\n"
+"Last-Translator: \n"
+"Language-Team: Suomi\n"
+"Language: fi\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.14; wp-6.6.2\n"
+"X-Domain: helsinki-user-roles"
+
+#. Author of the plugin
+msgid "ArtCloud"
+msgstr "ArtCloud"
+
+#. Description of the plugin
+msgid "Custom user roles for Helsinki WordPress sites."
+msgstr "Mukautettuja käyttäjärooleja Helsingin WordPress-sivustoille."
+
+#. Name of the plugin
+#: features/roles/functions.php:48
+msgid "Helsinki User Roles"
+msgstr "Helsinki käyttäjäroolit"
+
+#. Author URI of the plugin
+msgid "https://www.artcloud.fi"
+msgstr "https://www.artcloud.fi"
+
+#: features/roles/class-helsinki-page-editor.php:40
+msgctxt "Role description"
+msgid ""
+"The user can manage their own media files and update pages assigned to them."
+msgstr ""
+"Käyttäjä voi hallinnoida omia mediatiedostojaan ja päivittää hänelle "
+"osoitettuja sivuja."
+
+#: features/roles/class-helsinki-page-editor.php:35
+msgctxt "Role name"
+msgid "Helsinki Page Editor"
+msgstr "Helsinki sivumuokkaaja"
