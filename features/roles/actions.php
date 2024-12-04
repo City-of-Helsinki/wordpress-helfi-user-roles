@@ -13,9 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
   */
 add_action( 'helsinki_user_roles_activate', __NAMESPACE__ . '\\activate' );
 function activate(): void {
-	$adapter = default_role_adapter();
-
-	$adapter->register_roles();
+	default_role_adapter()->register_roles();
 }
 
 /**
