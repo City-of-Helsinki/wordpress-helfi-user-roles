@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Helsinki User Roles\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-04 14:43+0000\n"
+"POT-Creation-Date: 2024-12-04 14:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -36,7 +36,8 @@ msgstr ""
 #: features/roles/class-helsinki-page-editor.php:40
 msgctxt "Role description"
 msgid ""
-"The user can manage their own media files and update pages assigned to them."
+"The user can manage their own media files and update pages assigned to them. "
+"They cannot create or delete pages."
 msgstr ""
 
 #: features/roles/class-helsinki-page-editor.php:35
