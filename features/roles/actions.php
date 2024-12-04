@@ -23,9 +23,7 @@ function activate(): void {
   */
 add_action( 'helsinki_user_roles_loaded', __NAMESPACE__ . '\\loaded' );
 function loaded(): void {
-	$factory = default_role_factory();
-
-	foreach ( $factory->roles() as $role ) {
+	foreach ( default_role_factory()->roles() as $role ) {
 		$hooks = create_hook_adapter( $role );
 
 		add_filter( 'register_post_type_args', array( $hooks, 'register_post_type_args' ), 10, 2 );
@@ -42,4 +40,6 @@ function loaded(): void {
 			add_action( "load-{$page}", array( $hooks, 'redirect_disallowed_page' ) );
 		}
 	}
+
+	add_action( 'load-users.php', __NAMESPACE__ . '\\roles_help_tab' );
 }
