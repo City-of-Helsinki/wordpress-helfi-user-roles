@@ -37,7 +37,7 @@ class Helsinki_Page_Editor implements Custom_Role_Interface
 
 	public function description(): string
 	{
-		return _x( 'The user can manage their own media files and update pages assigned to them.', 'Role description', 'helsinki-user-roles' );
+		return _x( 'The user can manage their own media files and update pages assigned to them. They cannot create or delete pages.', 'Role description', 'helsinki-user-roles' );
 	}
 
 	public function allowed_post_types(): array
