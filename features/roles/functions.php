@@ -39,3 +39,30 @@ function default_role_adapter(): Custom_Roles_Adapter {
 function create_hook_adapter( Custom_Role_Interface $role ): Role_Hook_Adapter {
 	return new Role_Hook_Adapter( $role );
 }
+
+function roles_help_tab(): void {
+	$screen = get_current_screen();
+
+	$screen->add_help_tab( array(
+        'id' => 'helsinki_user_roles_help',
+        'title' => __( 'Helsinki User Roles', 'helsinki-user-roles' ),
+        'content' => create_roles_help_tab_content(),
+		'priority' => 100,
+    ) );
+}
+
+function create_roles_help_tab_content(): string {
+	$content = array( '<ul>' );
+
+	foreach ( default_role_factory()->roles() as $role ) {
+		$content[] = sprintf(
+			'<li><strong>%s</strong>: %s</li>',
+			esc_html( $role->title() ),
+			esc_html( $role->description() )
+		);
+	}
+
+	$content[] = '</ul>';
+
+	return implode( '', $content );
+}
