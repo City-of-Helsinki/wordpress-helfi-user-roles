@@ -22,7 +22,7 @@ class Helsinki_Page_Editor implements Custom_Role_Interface
 
 	public function version(): int
 	{
-		return 1;
+		return 2;
 	}
 
 	public function name(): string
@@ -66,6 +66,7 @@ class Helsinki_Page_Editor implements Custom_Role_Interface
 			'delete_posts' => true,
 			'edit_posts' => true,
 			'edit_pages' => true,
+			'edit_others_pages' => true,
 			'edit_published_pages' => true,
 			'publish_pages' => true,
 			'read' => true,

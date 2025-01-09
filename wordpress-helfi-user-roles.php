@@ -4,7 +4,7 @@
 	* Description: Custom user roles for Helsinki WordPress sites.
 	* Requires at least: 6.0.0
 	* Requires PHP: 7.4
-	* Version: 1.0.1
+	* Version: 1.1.0
 	* Author: ArtCloud
 	* Author URI: https://www.artcloud.fi
 	* License: GPL v2 or later
